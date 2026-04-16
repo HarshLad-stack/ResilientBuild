@@ -15,10 +15,10 @@ public @interface Resilient {
     double backoffMultiplier() default 2.0;
 
     // Timeout configuration
-    long timeout() default 2000; // milliseconds
+    long timeout() default 0; // milliseconds
 
     // Cache configuration
-    boolean cacheEnabled() default true;
+    boolean cacheEnabled() default false;
 
     long cacheTtl() default 60000; // 60 seconds
 
